@@ -1,0 +1,43 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 50
+#SBATCH -o eval_RF.log
+#SBATCH -J eval_RF
+#SBATCH -p gpu-a100
+#SBATCH -t 05:30:10
+#SBATCH --mail-user=saini.2@utexas.edu
+#SBATCH --mail-type=all
+
+# Unset PYTHONPATH to prevent conflicts with Conda environment paths
+unset PYTHONPATH
+unset PYTHONPATH
+
+
+# activating conda environment
+source /home1/09032/saini_2/miniconda3/etc/profile.d/conda.sh
+conda deactivate
+conda activate hdrmax
+
+# checking for conda envs and correct python version
+conda list | grep xgboost
+
+echo "Python being used:"
+which python3 
+
+
+# running the script 
+python3 model.py
+
+
+
+
+// srun python3 sr.py -p train -c ./config/sr_sr3_16_128_imagenet_1k.json
+
+// ibrun -n 40 python3 sr.py -p eval -c ./config/sr_sr3_64_512.json
+
+// idev -p gpu-a100 -N 1 -tpn 3 0:30:00
+// idev -p development 120
+
+// squeue --start -j 696937
+
+// ssh -Y -A -o "StrictHostKeyChecking no" c310-002
