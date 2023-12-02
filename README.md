@@ -19,7 +19,7 @@ Recidivism scores play a crucial role in the criminal justice system, but they c
 
 - **Data:** All the datasets used in this study are accessible within the `data` folder. The primary datasets are identified with the prefix `NIJ_s_Recidivism_Challenge,` comprising three test datasets and one training dataset. The `Recidivism_Full_Dataset.csv` consolidates these datasets by incorporating an additional column specifying whether each entry belongs to the training or test set. Furthermore, there are two cleaned versions of the dataset available: `Recidivism_Data_Cleaned.csv` and `Recidivism_Full_Dataset_cleaned_shreshth.csv.` These cleaned datasets represent the result of preprocessing steps.
 
-- **Analysis:** All models developed either in jupiter notebook and STATA are available in 'analysis' folder:
+- **Analysis:** All models developed either in jupiter notebook and STATA are available in `analysis` folder:
 
 1. **Data Preparation:** Refer to `clean_data.ipynb` and `data_prep.ipynb` for steps on cleaning and preparing the dataset.
 
@@ -29,13 +29,13 @@ Recidivism scores play a crucial role in the criminal justice system, but they c
 
 4. **Logistic Regression Table:** Execute `Logistic Regression Table.do` in STATA for detailed logistic regression results in tabular format for impact evaluation of different variables on the odds of recidisvism.
 
-5. **CatBoost Model:** Explore `catboost.ipynb` for a deeper dive into the CatBoost model.
+5. **CatBoost Model:** Explore `catboost.ipynb` for a deeper dive into the `CatBoost` model.
    
-6. **CatBoost Information:** Access additional information related to the CatBoost algorithm in the 'catboost_info' folder.
+6. **CatBoost Information:** Access additional information related to the CatBoost algorithm in the `catboost_info` folder.
    
-7. **Trained Models:** Find stored trained models in the 'trained_models' folder.
+7. **Trained Models:** Find stored trained models in the `trained_models` folder.
 
-8. **Analysis Results:** Review model weights and prediction comparisons in the 'tacc' folder.
+8. **Analysis Results:** Review model weights and prediction comparisons in the `tacc` folder.
 
 9. **Best Model:** Utilize `best_classifier_CatBoost.joblib` for the best-trained CatBoost machine learning model.
 
