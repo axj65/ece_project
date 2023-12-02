@@ -16,3 +16,5 @@ Recidivism scores play a crucial role in the criminal justice system, but they c
 - **Transparency and Explainability:** Prioritizing transparency in the model's decision-making process and providing explanations for predictions to enhance accountability.
 
 ## Getting Started
+
+- **Data:** All the datasets used in this study are accessible within the `data` folder. The primary datasets are identified with the prefix `NIJ_s_Recidivism_Challenge,` comprising three test datasets and one training dataset. The `Recidivism_Full_Dataset.csv` consolidates these datasets by incorporating an additional column specifying whether each entry belongs to the training or test set. Furthermore, there are two cleaned versions of the dataset available: `Recidivism_Data_Cleaned.csv` and `Recidivism_Full_Dataset_cleaned_shreshth.csv.` These cleaned datasets represent the result of preprocessing steps. 
